@@ -1,0 +1,34 @@
+.input {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 322px;
+    height: 51px;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    box-sizing: border-box;
+    padding-left: 24px;
+    font-size: 18px;
+    &::placeholder {
+        font-size: 18px;
+    }
+}
+
+.input-wrapper {
+    width: 342px;
+    height: 71px;
+    position: relative;
+    background-color: $input-bg;
+    box-sizing: border-box;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin-right: 40px;
+}

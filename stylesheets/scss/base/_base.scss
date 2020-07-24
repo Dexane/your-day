@@ -3,14 +3,12 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: normal;
     color: $text-main;
-    font-size: 10px;
 }
 
 li a:hover {
     color: $button;
 }
 
-.center {
-    max-width: 1180px;
-    margin: 0 auto;
+html {
+    font-size: 10px;
 }

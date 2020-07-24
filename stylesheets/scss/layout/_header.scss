@@ -2,10 +2,9 @@
     display: flex;
     padding-top: 25px;
     align-items: center;
-}
-
-.header__nav {
-    margin-left: auto;
+    &__nav {
+        margin-left: auto;
+    }
 }
 
 .logo {
@@ -16,5 +15,11 @@
 
 .list-item__link {
     margin-left: 19px;
-    font-size: 1.8em;
+    font-size: 18px;
+}
+
+// Убираем отображение мобильного меню на десктопе
+.hamburger,
+.nav-mobile {
+    display: none;
 }
