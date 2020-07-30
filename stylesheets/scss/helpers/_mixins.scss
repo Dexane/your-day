@@ -2,3 +2,9 @@
     max-width: 1180px;
     margin: 0 auto;
 }
+
+@mixin tilted-line {
+    width: 100%;
+    height: 150px;
+    clip-path: polygon(130% 15%, 130% 100%, 50% 100%, -30% 100%);
+}
