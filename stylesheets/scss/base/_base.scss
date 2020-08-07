@@ -2,7 +2,6 @@
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: normal;
-    color: $text-main;
 }
 
 li a:hover {
@@ -11,4 +10,13 @@ li a:hover {
 
 html {
     font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
 }

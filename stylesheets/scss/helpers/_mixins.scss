@@ -8,3 +8,11 @@
     height: 150px;
     clip-path: polygon(130% 15%, 130% 100%, 50% 100%, -30% 100%);
 }
+
+@mixin rubik {
+    font-family: 'Rubik', sans-serif;
+}
+
+@mixin open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
