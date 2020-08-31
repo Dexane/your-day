@@ -1,0 +1,145 @@
+.promo {
+    @include center;
+    margin-top: 200px;
+    &__video {
+        &-item-wrapper {
+            display: flex;
+            justify-content: space-between;
+            height: 400px;
+            margin-top: 125px;
+        }
+    }
+    &__title {
+        font-size: 3.6rem;
+        margin-bottom: 190px;
+    }
+    &__numbers {
+        margin-top: 160px;
+    }
+    &___numbers-title {}
+    &__reviews {
+        margin-top: 170px;
+    }
+}
+
+.video-item {
+    box-shadow: 0px 0px 20px rgba(115, 133, 231, 0.15);
+    height: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    flex-basis: 320px;
+    position: relative;
+    cursor: pointer;
+    &:after {
+        content: '';
+        background: url('../../../img/promo/promo_play.png');
+        position: absolute;
+        top: 36%;
+        left: 49%;
+        //margin-right: -50%;
+        transform: translate(-40%, -50%);
+        width: 72px;
+        height: 72px;
+        z-index: 10;
+        -webkit-transform: translate(-40%, -50%);
+        -moz-transform: translate(-40%, -50%);
+        -ms-transform: translate(-40%, -50%);
+        -o-transform: translate(-40%, -50%);
+    }
+    &__img {
+        background: center center;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+        -o-border-radius: 10px 10px 0 0;
+        width: 320px;
+    }
+    &__text {
+        text-align: center;
+        font-size: 2rem;
+        width: 100%;
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+            height: 83px;
+        }
+        @include rubik;
+        span {
+            display: block;
+        }
+    }
+    &:nth-child(odd) {
+        align-self: flex-end;
+    }
+    &:nth-child(even) {
+        align-self: flex-start;
+    }
+}
+
+.numbers-item {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 320px;
+    font-size: 2.2rem;
+    height: 300px;
+    &__text {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 320px;
+        position: relative;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+//Numbers before text
+.first--item,
+.second--item,
+.third--item,
+.fourth--item,
+.fifth--item {
+    &:before {
+        position: absolute;
+        top: -80px;
+        left: -50px;
+        font-size: 12rem;
+        font-weight: bold;
+    }
+}
+
+.first--item:before {
+    content: '120';
+    color: $light--orange;
+}
+
+.second--item:before {
+    content: '86%';
+    color: $light--pink;
+}
+
+.third--item:before {
+    content: '25';
+    color: $light--violet;
+    top: 20px;
+}
+
+.fourth--item:before {
+    content: '40';
+    color: $light--blue;
+}
+
+.fifth--item:before {
+    content: '5';
+    color: $light--blue;
+}

@@ -1,6 +1,6 @@
-.adv-item:nth-child(3):before {
+.adv-item:first-child:before {
     content: '';
-    background: url(/img/about/about__confetti.png);
+    background: url(/img/about/about__candy.png);
     position: absolute;
     top: -80px;
     left: -50px;

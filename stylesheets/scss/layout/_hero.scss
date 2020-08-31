@@ -81,4 +81,12 @@
     background-color: $text-main;
     @include tilted-line;
     z-index: 10;
+    &::before {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        background-color: $light--white;
+        @include tilted-line;
+        z-index: 10;
+    }
 }

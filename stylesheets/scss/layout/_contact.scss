@@ -1,0 +1,44 @@
+.contact {
+    position: relative;
+    background-color: $bg-midblue;
+    height: 400px;
+    color: $text-main;
+    &__title {
+        font-size: 3.6rem;
+    }
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 62px;
+    }
+    &__inner {
+        @include center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    &__tilted-line {
+        @include tilted-line;
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+    }
+}
+
+.bottom--side {
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    background-color: $bg-midblue;
+    clip-path: polygon(-50% 100%, 150% 0%, 50% 0%, -50% 0%);
+}
+
+.top--side {
+    position: absolute;
+    top: -150px;
+    left: 0;
+    clip-path: polygon(130% 15%, 130% 100%, 50% 100%, -30% 100%);
+    background-color: $bg-midblue;
+}

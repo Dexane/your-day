@@ -1,6 +1,28 @@
+@import '../helpers/mixins';
 .about {
     @include center;
     color: $dark--grey;
+    position: relative;
+    &::before {
+        content: '';
+        background: url(../../../img/about/about__square.png);
+        position: absolute;
+        z-index: 0;
+        width: 437px;
+        height: 437px;
+        top: 250px;
+        left: -500px;
+    }
+    &:after {
+        content: '';
+        background: url(../../../img/about/about__zigzag.png);
+        position: absolute;
+        z-index: 0;
+        width: 451px;
+        height: 305px;
+        top: -100px;
+        right: -570px;
+    }
     &__text {
         width: 60%;
         margin-top: 100px;
@@ -22,6 +44,17 @@
     &__adv {
         margin-top: 150px;
         color: $dark--grey;
+        margin-bottom: 200px;
+        &:before {
+            content: '';
+            background: url(../../../img/about/about__circle.png);
+            position: absolute;
+            z-index: 0;
+            width: 296px;
+            height: 296px;
+            bottom: -300px;
+            left: -500px;
+        }
         &-title {
             font-size: 3.6rem;
         }
@@ -81,6 +114,8 @@
     z-index: 10;
     &__title {
         font-size: 2.2rem;
+        position: relative;
+        z-index: 10;
     }
     &__subtitle {
         font-size: 1.8rem;
