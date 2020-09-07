@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Твой День | Детские праздники в СПб</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/splide-2.4.12/dist/css/splide.min.css">
     <link rel="stylesheet" href="/stylesheets/css/main.css">
 </head>
 
@@ -168,17 +169,84 @@
                 </div>
             </div>
         </div>
+        <!-- Reviews -->
         <div class="promo__reviews">
             <h2 class="promo__title">Отзывы о нас:</h2>
+            <!-- Carousel -->
+            <div id="splide" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide  review">
+                            <div class="review__header">
+                                <img class="review__profile-pic" src="/img/promo/promo__profile-pic-1.jpg" alt="">
+                                <h3 class="review__title">Николай Воронов</h3>
+                                <p class="review__subtitle">отец 2-х дочерей</p>
+                            </div>
+                            <p class="review__text clearfix">Уже и не знали, как именно провести очередной праздник для наших близняшек, но нас спасли ребята из агентства “Твой день”. Теперь Аня и Лена с нетерпением ждут свой следующий День Рождения.</p>
+                        </li>
+                        <li class="splide__slide review">
+                            <div class="review__header">
+                                <img class="review__profile-pic" src="/img/promo/promo__profile-pic-2.jpg" alt="">
+                                <h3 class="review__title">Марина Волкова</h3>
+                                <p class="review__subtitle">мать 2-х детей</p>
+                            </div>
+                            <p class="review__text clearfix">Прекрасное агентство! Устроили моему Мише крутой, хайповый праздник. Такого я еще не видела.</p>
+                        </li>
+                        <li class="splide__slide review">
+                            <div class="review__header">
+                                <img class="review__profile-pic" src="/img/promo/promo__profile-pic-3.jpg" alt="">
+                                <h3 class="review__title">Валентина Николаевна</h3>
+                                <p class="review__subtitle">директор детского центра “Агуша”</p>
+                            </div>
+                            <p class="review__text clearfix">Обратились к агентству “Твой день”, чтобы провели открытие нашего детского центра и все прошло на необычайно высоком уровне. Детям так понравилось, что не хотели уходить домой.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <!-- End of Promo section -->
 
     <!-- Footer -->
     <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__contacts">
+                <div class="footer__contacts-icons icons">
+                    <img src="/img/hero/hero__logo.png" alt="Твой день" class="logo">
+                    <div class="icons__wrapper">
 
+                    </div>
+                </div>
+                <div class="footer__contacts-contact">
+                    <a href="mailto:tvoyden@info.ru">tvoyden@info.ru</a>
+                    <h3>г. Санкт-Петербург</h3>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <ul class="footer__list-items list-item">
+                    <li class="list-item__link"><a href="">Об агенстве</a></li>
+                    <li class="list-item__link"><a href="">Праздничные услуги</a></li>
+                    <li class="list-item__link"><a href="">Вы получаете</a></li>
+                    <li class="list-item__link"><a href="">Проведенные мероприятия</a></li>
+                    <li class="list-item__link"><a href="">Наш опыт</a></li>
+                    <li class="list-item__link"><a href="">Отзывы о нас</a></li>
+                </ul>
+            </div>
+            <div class="footer__form">
+                <div class="input-name-wrapper">
+                    <input type="tel" class="input-tel" placeholder="Номер телефона">
+                </div>
+                <div class="input-tel-wrapper">
+                    <input type="tel" class="input-tel" placeholder="Имя">
+                </div>
+                <button class="button">Заказать звонок</button>
+            </div>
+        </div>
+        <div class="footer__copyright">Все права защищены ООО “Твой день” 2017</div>
     </footer>
     <!-- End of Footer -->
+    <script src="splide-2.4.12/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 .promo {
     @include center;
     margin-top: 200px;
+    margin-bottom: 50px;
     &__video {
         &-item-wrapper {
             display: flex;
@@ -16,7 +17,6 @@
     &__numbers {
         margin-top: 160px;
     }
-    &___numbers-title {}
     &__reviews {
         margin-top: 170px;
     }

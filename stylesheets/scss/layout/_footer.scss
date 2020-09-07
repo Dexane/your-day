@@ -1,0 +1,11 @@
+.footer {
+    @include center;
+    background: linear-gradient(309.37deg, #8CDCFF 47.27%, #BDEBFF 124.89%);
+    &__inner {
+        display: flex;
+    }
+    &__copyright {
+        text-align: center;
+        color: $main-text;
+    }
+}
